@@ -12,7 +12,7 @@ def map(arr)
 end 
 
 def reduce(arr, start = nil)
-  i = start? 0 : 1
+  i = start ? 0 : 1
   reduce = start || arr[0]
   while i < arr.size do
     reduce = yield(reduce,arr[i])
